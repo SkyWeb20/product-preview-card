@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-card {
+    background-color: white;
+    width: 800px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image,
+.product-info {
+    flex: 1;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfume {
+    margin: -0px 50px 50px 50px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin: -20px 50px 50px 50px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin: -30px 50px 50px 50px;
+    line-height: 30px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: #437e68;
+    font-weight: 700;
+    margin: -31px 50px 65px 50px;
+    align-items: center;
+}
+
+.old-price {
+    font-family: serif;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    top: -7px;
+}
+
+button {
+    background-color: #3d8168;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: -30px 50px 14px 50px;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #1a4031;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      width: 90%;
+      margin-top: 20px; 
+    }
+  
+    .product-image img {
+      content: url("../img/image-product-mobile.jpg"); 
+    }
+  
+    .product-image {
+      order: 1;
+    }
+  
+    .product-info {
+      order: 2;
+      padding: 20px;
+    }
+  }
